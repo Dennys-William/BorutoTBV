@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+/* NAV */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.geral {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  align-items: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: black;
+
+ top: 0px;
+ position: relative;
+}
+.geral a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.mini-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 500px;
+    background: #00223D;
+    background: #266F97;
+    display: block;
+   
+}
+
+.mini-logo-animacao {
+   animation: rodar 2s infinite linear;
+}
+
+@keyframes rodar {
+    to {
+    transform: rotate(360deg);
+    }
+    from {
+    transform: rotate(0deg);
+    }
+
+}
+
+
+.mini-logo-c {
+    display: none;
+   
+}
+
+
+.inicio {
+    display: flex;
+    padding-left: 9vh;
+    transition-duration: 1s;
+}
+
+.inicio ul {
+    display: flex;
+    
+}
+.inicio li{
+    list-style: none;
+    padding-left: 5vh;
+    transition-duration: 0.3s;
+
+}
+
+
+.autor  {
+   position: absolute;
+    
+}
+
+
+.inicio img  {
+    transition-duration: 0.3s;
+    /*outline: 1px solid purple;
+    outline-offset: 0.4vh;*/
+    
+}
+
+/* Decoração */
+/*
+.inicio li:hover {
+   opacity: 0.5;
+}
+*/
+/* login */
+.login {
+    padding-right: 2vh;
+    float: left;
+    padding-bottom: 1vh;
+}
+.login a {
+    color: rgb(192, 192, 232);
+ 
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.login a:hover {
+    border-bottom: 1px solid #90453D;
+}
+.login-1 {
+  width: 20px;
+  transform: translateY(2px);
+}
+.login-c {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}
+
+
+.menu-toggle {
+    display: none;
+}
+
+
+
+.masashi, .descricao  {
+    display: block;
+    color: white;
+}
+.descricao {
+    opacity: 0;
+}
+.descricao-pos {
+    opacity: 1;
+}
+
+.masashi-c, .descricao-c{
+    display: none;
+}
+
+
+
+
+
+
+/*FIM DA NAV */
+
+
+
+header {
+    width: 100%;
+    position: relative;
+    /*outline: 5px solid maroon; */
+}
+h2 {
+    font-size: 5vh;
+    color: #0966b1;
+    display: flex;
+    
+}
+h2 div {
+    color: #994c40;
+    margin-left: 1vh;
+}
+
+main {
+    width: 100%;
+    height: 90vh;
+    /*outline: 1px solid wheat;  */
+    position: relative;
+    background: rgb(0, 0, 0);
+    
+
+}
+
+.main1 {
+    background: black;
+    bottom: 15%;
+    /*outline: 5px solid wheat;*/
+    width: 90%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 70%;
+    position: absolute;
+     
+}
+
+
+.foto {
+    width: 50%;
+    height: 0%;
+    position: absolute;
+    right: 0%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition-duration: 1s;
+    opacity: 0;
+    visibility: visible;
+}
+
+.video1 {
+    
+}
+
+.opacity  /*faz parte da 'foto'*/{
+    opacity: 1;
+    height: 90%;
+    transition: 1.3s;
+}
+    
+
+
+.fotoV {
+    width: 50%;
+    height: 0%;
+    position: absolute;
+    right: 0%;
+    border-radius: 20px;
+    object-fit: cover;
+    transition-duration: 1s;
+   
+    visibility: hidden;
+}
+
+
+
+.foto1 {
+    display: none;
+}
+.fotoV1 {
+    display: none;
+}
+
+
+figure {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  
+}
+figcaption {
+    width: 50%;
+    height: 60%;
+    overflow: hidden;
+    
+   /* outline: 1px solid magenta;*/
+   /*
+    bottom: 50%;
+    transform: translateY(50%);
+    */
+    position: absolute;
+    left: 0%;
+    text-align: left;
+}
+
+figcaption p {
+    
+    width: 90%;
+    height: 100%;
+    color: wheat;
+    font-size: 3vh;
+    text-align: justify;
+    
+}
+
+
+
+
+
+
+.trailer{
+    width: 100%;
+    height: 120vh;
+    
+    position: relative;
+    background: rgb(22, 22, 22);
+    text-align: center;
+}
+
+.caixa {
+    /*
+    width: 40%;
+    */
+    
+    min-width: 320px;
+    max-width: 800px;
+    height: 45%;
+    margin: auto;
+    position: relative;
+   /*outline: 1px solid white;*/
+    background: rgb(22, 22, 22);
+   
+}
+
+.logo {
+   margin-left: 50%;
+   transform: translateX(-50%);
+   width: 50%;
+   display: block;
+ 
+    
+    height: 100%;
+    object-fit: contain;
+}
+.logo-c {
+    display: none;
+}
+
+.conteudo {
+   /* outline: 1px solid white;*/
+    min-width: 320px;
+    max-width: 500px;
+    min-height: 320px;
+    max-height: 800px;
+    
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    object-fit: contain;
+   overflow: hidden; 
+}
+.imagem {
+    width: 100% ;
+    min-height: 320px;
+    max-height: 800px;
+    border-radius: 20px;
+    object-fit: cover;
+    transition-duration: 1s;
+    position: initial;
+   
+}
+.imagem1 {
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+
+}
+.video {
+    /*outline: 2px solid purple; */
+    transition: 0.6s;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  
+}
+.teee {
+    width: 20vh;
+    height: 20vh;
+}
+/*
+.imagem:hover {
+    width: 40%;
+    border-radius: 100%;
+}
+*/
+
+.botao {
+    width: 90px;
+    height: 100%;
+    position: absolute;
+   /* outline: 1px solid wheat;*/
+     left: 50%;
+     transform: translateX(-50%);
+      text-align: left;
+}
+.botao1 {
+    width: 100%;
+    height: 86px;
+    object-fit: cover;
+    border-radius: 500px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+      
+}
+
+
+
+
+/*
+.trailer {
+    width: 100%;
+    height: 120vh;
+    outline: 1px solid black;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 0%;
+    
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.video {
+    width: 40%;
+    height: 40%;
+    object-fit: contain;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h2 {
+    color: red;
+    font-size: 4vh;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+*/
+
+
+
