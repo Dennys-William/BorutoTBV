@@ -320,12 +320,11 @@ figcaption p {
 }
 
 .conteudo {
-   /* outline: 1px solid white;*/
+   /*outline: 1px solid white;*/
     min-width: 320px;
     max-width: 500px;
     min-height: 320px;
     max-height: 800px;
-    
     position: relative;
     margin: auto;
     border-radius: 10px;
